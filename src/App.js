@@ -1,5 +1,5 @@
 import React from "react";
-import BaseRenderer from "./BaseRenderer";
+import BaseRenderer from "./components/BaseRenderer";
 
 export function App() {
   return <BaseRenderer />;
