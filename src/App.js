@@ -1,5 +1,6 @@
 import React from "react";
+import BaseRenderer from "./BaseRenderer";
 
 export function App() {
-  return <h1>Hello world!!</h1>;
+  return <BaseRenderer />;
 }
