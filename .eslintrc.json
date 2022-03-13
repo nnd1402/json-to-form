@@ -1,35 +1,42 @@
 {
-    "extends": [
-      "eslint:recommended",
-      "plugin:import/errors",
-      "plugin:react/recommended",
-      "plugin:jsx-a11y/recommended",
-      "plugin:react-hooks/recommended",
-      "prettier"
-    ],
-    "rules": {
-      "react/prop-types": 0,
-      "jsx-a11y/label-has-for": 0,
-      "no-console": 1
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react/prop-types": 0,
+    "jsx-a11y/label-has-for": 0,
+    "no-console": 1,
+    // suppress errors for missing 'import React' in files
+    "react/react-in-jsx-scope": "off",
+    // allow jsx syntax in js files (for next.js project)
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }] //should add ".ts" if typescript project
+  },
+  "plugins": ["react", "import", "jsx-a11y"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
     },
-    "plugins": ["react", "import", "jsx-a11y"],
-    "parser": "@babel/eslint-parser",
-    "parserOptions": {
-      "ecmaVersion": 8,
-      "requireConfigFile": false,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true
-      }
-    },
-    "env": {
-      "es6": true,
-      "browser": true,
-      "node": true
-    },
-    "settings": {
-      "react": {
-        "version": "detect"
-      }
+    "requireConfigFile": false,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
     }
   }
+}
