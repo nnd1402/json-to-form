@@ -1,5 +1,7 @@
+import MenuItem from "./MenuItem";
+
 const MenuRenderer = (props) => {
-  return <div>{props.title}</div>;
+  return <MenuItem title={props.title} />;
 };
 
 export default MenuRenderer;
