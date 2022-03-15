@@ -8,11 +8,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faPenFancy } from "@fortawesome/free-solid-svg-icons";
 
-const MenuItem = (props) => {
+const circleIconStyle = {
+  color: "808080",
+};
+
+const MenuItem = (props: any) => {
   return (
     <>
       <span className="fa-layers fa-fw fa-5x">
-        <FontAwesomeIcon icon={faCircle} style={{ color: "gray" }} />
+        <FontAwesomeIcon icon={faCircle} style={circleIconStyle} />
         <FontAwesomeIcon icon={faPenFancy} transform={"shrink-8"} />
       </span>
       <div>{props.title}</div>
