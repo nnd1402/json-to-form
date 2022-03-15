@@ -18,6 +18,25 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Second menu",
+      "submenus": [
+        {
+          "title": "First submenu",
+          "blocks": [
+            {
+              "title": "First block",
+              "questions": [
+                {
+                  "title": "First question",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
