@@ -2,6 +2,7 @@
   "menus": [
     {
       "title": "First menu",
+      "faClass": ["fal", "coffee"],
       "submenus": [
         {
           "title": "First submenu",
@@ -21,6 +22,7 @@
     },
     {
       "title": "Second menu",
+      "faClass": ["far", "coffee"],
       "submenus": [
         {
           "title": "First submenu",

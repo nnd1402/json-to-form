@@ -1,11 +1,8 @@
+import BodyRenderer from "./BodyRenderer";
 import MenuRenderer from "./MenuRenderer";
 
 const BaseRenderer = () => {
-  var form = require("../data/form.json");
-
-  return form.menus.map((menu: any) => (
-    <MenuRenderer title={menu.title} key={menu.title} />
-  ));
+  return (<><MenuRenderer /><BodyRenderer /></>);
 };
 
 export default BaseRenderer;

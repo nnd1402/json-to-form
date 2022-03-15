@@ -13,11 +13,14 @@ const circleIconStyle = {
 };
 
 const MenuItem = (props: any) => {
+  console.log('caio');
+  console.log(props.faClass);
   return (
     <>
       <span className="fa-layers fa-fw fa-5x">
         <FontAwesomeIcon icon={faCircle} style={circleIconStyle} />
         <FontAwesomeIcon icon={faPenFancy} transform={"shrink-8"} />
+        <FontAwesomeIcon icon={props.faClass} transform={"shrink-8"} />
       </span>
       <div>{props.title}</div>
     </>
