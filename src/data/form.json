@@ -2,7 +2,7 @@
   "menus": [
     {
       "title": "First menu",
-      "faClass": ["fal", "coffee"],
+      "faClass": "faPenFancy",
       "submenus": [
         {
           "title": "First submenu",
@@ -22,7 +22,67 @@
     },
     {
       "title": "Second menu",
-      "faClass": ["far", "coffee"],
+      "faClass": "faPencil",
+      "submenus": [
+        {
+          "title": "First submenu",
+          "blocks": [
+            {
+              "title": "First block",
+              "questions": [
+                {
+                  "title": "First question",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Third menu",
+      "faClass": "faCode",
+      "submenus": [
+        {
+          "title": "First submenu",
+          "blocks": [
+            {
+              "title": "First block",
+              "questions": [
+                {
+                  "title": "First question",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fourth menu",
+      "faClass": "faBrain",
+      "submenus": [
+        {
+          "title": "First submenu",
+          "blocks": [
+            {
+              "title": "First block",
+              "questions": [
+                {
+                  "title": "First question",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fifth menu",
+      "faClass": "faBug",
       "submenus": [
         {
           "title": "First submenu",

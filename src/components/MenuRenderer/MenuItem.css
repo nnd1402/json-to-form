@@ -1,0 +1,32 @@
+.circleIconStyle {
+  border: 3px solid yellow;
+  border-radius: 50%;
+  color: #808080;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* needs fix for the dashed line after last child icon element */
+.itemContainer .icons:not(:last-child):after {
+  position: absolute;
+  content: "";
+  right: -50%;
+  width: 55%;
+  height: 50%;
+  border-bottom: 2px dashed black;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.iconTitle {
+  font-size: 1.5em;
+  padding: 10px;
+  color: #808080;
+}
